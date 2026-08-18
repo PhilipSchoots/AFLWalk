@@ -1,0 +1,18 @@
+digraph model_output_100 {
+q0 [label="q0"];
+q1 [label="q1"];
+q0 -> q1 [label="USER ubuntu/331:1.0"];
+q0 -> q0 [label="STOR/530:1.0"];
+q0 -> q0 [label="PASS ubuntu/530:1.0"];
+q0 -> q0 [label="TYPE I/530:1.0"];
+q0 -> q0 [label="PROT P/530:1.0"];
+q0 -> q0 [label="EPSV/530:1.0"];
+q0 -> q0 [label="QUIT/221:1.0"];
+q1 -> q0 [label="PASS ubuntu/230:1.0"];
+q1 -> q1 [label="USER ubuntu/331:1.0"];
+q1 -> q1 [label="RNFR file/530:1.0"];
+q1 -> q1 [label="FEAT/211:1.0"];
+q1 -> q1 [label="SYST/215:1.0"];
+__start0 [shape=none, label=""];
+__start0 -> q0 [label=""];
+}
